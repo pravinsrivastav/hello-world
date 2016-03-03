@@ -1,0 +1,62 @@
+Cloudant's RESTful API makes every document in your Cloudant database accessible as JSON via a URL; this is one of the features that makes Cloudant so powerful for web applications.
+
+The sample database behind this tutorial 
+
+
+Environment Variables
+Environment Variables
+VCAP_SERVICES USER-DEFINED
+{
+   "cloudantNoSQLDB": [
+      {
+         "name": "Cloudant NoSQL DB-xz",
+         "label": "cloudantNoSQLDB",
+         "plan": "Shared",
+         "credentials": {
+            "username": "29ec9efd-ce53-4d44-84ed-53654b513cf4-bluemix",
+            "password": "91fe9e5d0134148d01b75a9a5a6ce365132d0b255414fe76b0fba2c8ab28c5b5",
+            "host": "29ec9efd-ce53-4d44-84ed-53654b513cf4-bluemix.cloudant.com",
+            "port": 443,
+            "url": "https://29ec9efd-ce53-4d44-84ed-53654b513cf4-bluemix:91fe9e5d0134148d01b75a9a5a6ce365132d0b255414fe76b0fba2c8ab28c5b5@29ec9efd-ce53-4d44-84ed-53654b513cf4-bluemix.cloudant.com"
+         }
+      }
+   ],
+   "dashDB": [
+      {
+         "name": "dashDB-td",
+         "label": "dashDB",
+         "plan": "Entry",
+         "credentials": {
+            "port": 50000,
+            "db": "BLUDB",
+            "username": "dash5394",
+            "ssljdbcurl": "jdbc:db2://dashdb-entry-yp-dal09-07.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;",
+            "host": "dashdb-entry-yp-dal09-07.services.dal.bluemix.net",
+            "https_url": "https://dashdb-entry-yp-dal09-07.services.dal.bluemix.net:8443",
+            "dsn": "DATABASE=BLUDB;HOSTNAME=dashdb-entry-yp-dal09-07.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=dash5394;PWD=Bq6YiAUy7ejH;",
+            "hostname": "dashdb-entry-yp-dal09-07.services.dal.bluemix.net",
+            "jdbcurl": "jdbc:db2://dashdb-entry-yp-dal09-07.services.dal.bluemix.net:50000/BLUDB",
+            "ssldsn": "DATABASE=BLUDB;HOSTNAME=dashdb-entry-yp-dal09-07.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=dash5394;PWD=Bq6YiAUy7ejH;Security=SSL;",
+            "uri": "db2://dash5394:Bq6YiAUy7ejH@dashdb-entry-yp-dal09-07.services.dal.bluemix.net:50000/BLUDB",
+            "password": "Bq6YiAUy7ejH"
+         }
+      }
+   ],
+   "sqldb": [
+      {
+         "name": "SQL Database-po",
+         "label": "sqldb",
+         "plan": "sqldb_free",
+         "credentials": {
+            "hostname": "75.126.155.153",
+            "password": "2dksZPOIlD6h",
+            "port": 50000,
+            "host": "75.126.155.153",
+            "jdbcurl": "jdbc:db2://75.126.155.153:50000/SQLDB",
+            "uri": "db2://user12765:2dksZPOIlD6h@75.126.155.153:50000/SQLDB",
+            "db": "SQLDB",
+            "username": "user12765"
+         }
+      }
+   ],
+
